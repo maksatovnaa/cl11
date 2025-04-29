@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <style>  
+  
+   body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+  }
+   p{
+
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 12px;
+  }
+  .text{
+    display: flex;
+    flex-direction: row;
+    gap:105px;
+    color:rgb(41, 17, 63);
+  }
+
+  button{
+    width: 395px;
+    height: 50px;
+    background-color: rgb(34, 20, 48);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+
+  }
+  .inputs{
+    margin-top: 260px;
+    margin-left: 290px;
+  }
+
+  .text1{
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .card1 h1{
+    color: white;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  .card1 img{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+
+  .card {
+    background-image: url('bg-card-front.png');
+    width: 440px;
+    height: 215px;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .circle-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .circle-small {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+
+  .card-number {
+    font-size: 28px;
+    color: white;
+    margin-top: 60px;
+    letter-spacing: 2px;
+  }
+
+  .card-info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .card2 {
+    background-image: url(bg-card-back.png);
+    width: 446px;
+    height: 244px;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 460px;
+    margin-left: 300px;
+  }
+
+  .card2 p {
+    margin-top: 110px;
+    margin-left: 360px;
+    color: white;
+  }
+
+  .container {
+    position: relative;
+  }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div>
+      <div class="card">
+        <div class="logo">
+          <div class="circle-large"></div>
+          <div class="circle-small"></div>
+        </div>
+        <p class="card-number">0000 0000 0000 0000</p>
+        <div class="card-info">
+          <p>Jane Appleseed</p>
+          <p>00/00</p>
+        </div>
+      </div>
+  
+      <div class="card2">
+        <p>000</p>
+      </div>
+    </div>
+
+<div class="row">
+ 
+  <div class="photo">
+<img src="bg-main-desktop.png">
+  </div>
+
+<div class="inputs">
+
+  <div class="input">
+<p>  Cardholder Name</p>
+<input type="text" placeholder=" e.g. Jane Appleseed" class="placeholder" style="width: 385px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px; ">
+<p  class="error" style="color: red; display: none; ">Wrong format, numbers only</p>
+
+</div>
+
+<div class="input">
+  <p>  Card Number  </p>
+  <input type="text" placeholder="  e.g. 1234 5678 9123 0000" class="placeholder" style="width: 385px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+  <p  class="error" style="color: red; display: none; ">Wrong format, numbers only</p>
+  </div>
+
+  <div class="input">
+    <div class="text">
+   <p> Exp. Date (MM/YY)</p>
+   <p>CVC</p>
+  </div>
+  <input type="text" placeholder=" MM" class="placeholder"  style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+  <p  class="error" style="color: red; display: none; ">Can't be blank</p>
+  <input type="text" placeholder=" YY" class="placeholder" style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;" >
+  <p  class="error" style="color: red; display: none; ">Can't be blank</p>
+    <input type="text" placeholder=" e.g. 123 " class="placeholder"  style="width: 145px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+    <p  class="error" style="color: red; display: none; ">Can't be blank</p>
+    </div>
+  
+<button>Confirm</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+ 
+</body>
+</html>
