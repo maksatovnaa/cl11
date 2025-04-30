@@ -148,13 +148,13 @@
         </div>
         <p class="card-number">0000 0000 0000 0000</p>
         <div class="card-info">
-          <p>Jane Appleseed</p>
-          <p>00/00</p>
+          <p class="name">Jane Appleseed</p>
+          <p><span class="month1">00</span>/<span class="year1">00</span></p>
         </div>
       </div>
   
       <div class="card2">
-        <p>000</p>
+        <p class="cvc1">000</p>
       </div>
     </div>
 
@@ -175,7 +175,7 @@
 
 <div class="input">
   <p>  Card Number  </p>
-  <input type="text" placeholder="  e.g. 1234 5678 9123 0000" class="placeholder" style="width: 385px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+  <input type="text" placeholder="  e.g. 1234 5678 9123 0000" class="plnumber" style="width: 385px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
   <p  class="error" style="color: red; display: none; ">Wrong format, numbers only</p>
   </div>
 
@@ -184,15 +184,15 @@
    <p> Exp. Date (MM/YY)</p>
    <p>CVC</p>
   </div>
-  <input type="text" placeholder=" MM" class="placeholder"  style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+  <input type="text" placeholder=" MM" class="month"  style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
   <p  class="error" style="color: red; display: none; ">Can't be blank</p>
-  <input type="text" placeholder=" YY" class="placeholder" style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;" >
+  <input type="text" placeholder=" YY" class="year" style="width: 110px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;" >
   <p  class="error" style="color: red; display: none; ">Can't be blank</p>
-    <input type="text" placeholder=" e.g. 123 " class="placeholder"  style="width: 145px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
+    <input type="text" placeholder=" e.g. 123 " class="cvc"  style="width: 145px; height: 42px; border: 1px solid rgb(210, 210, 210); border-radius: 8px;">
     <p  class="error" style="color: red; display: none; ">Can't be blank</p>
     </div>
   
-<button>Confirm</button>
+<button class="btn">Confirm</button>
 </div>
 </div>
 
